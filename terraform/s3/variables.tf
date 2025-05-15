@@ -7,5 +7,4 @@ variable "aws_region" {
 variable "bucket_name" {
   description = "Nome único do bucket S3"
   type        = string
-  default     = "reddit-pipeline-bckt"
 }
