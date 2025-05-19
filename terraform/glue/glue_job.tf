@@ -22,3 +22,13 @@ resource "aws_glue_job" "reddit_job" {
   worker_type       = "G.1X"
   description       = "Reddit Job"
 }
+
+# resource "aws_glue_trigger" "reddit-job-trigger" {
+#   name     = "reddit-daily-trigger"
+#   type     = "SCHEDULED"
+#   schedule = "cron(0 3 * * ? *)" # Executes every day at 03:00 UTC
+#
+#   actions {
+#     job_name = aws_glue_job.reddit_job.name
+#   }
+# }
