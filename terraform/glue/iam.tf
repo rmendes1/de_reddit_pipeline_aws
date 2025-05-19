@@ -41,6 +41,21 @@ resource "aws_iam_policy" "glue_s3_access_policy" {
           "logs:PutLogEvents"
         ],
         Resource = "*"
+      },
+      {
+        Effect = "Allow",
+        Action = [
+          "glue:GetDatabase",
+          "glue:GetDatabases",
+          "glue:CreateTable",
+          "glue:UpdateTable",
+          "glue:GetTable",
+          "glue:GetTables",
+          "glue:CreatePartition",
+          "glue:GetPartition",
+          "glue:GetPartitions"
+        ],
+        Resource = "*"
       }
     ]
   })
