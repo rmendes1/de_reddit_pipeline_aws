@@ -61,7 +61,6 @@ de_reddit_pipeline_aws/
 1. **Clone the repository**:
     
     ```bash
-    bash
     git clone https://github.com/rmendes1/de_reddit_pipeline_aws.git
     cd de_reddit_pipeline_aws
     
@@ -104,7 +103,6 @@ de_reddit_pipeline_aws/
 4. **Build and run Docker containers**:
     
     ```bash
-    CopiarEditar
     docker-compose up --build -d
     
     ```
